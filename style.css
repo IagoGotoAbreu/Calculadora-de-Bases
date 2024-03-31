@@ -1,51 +1,64 @@
-.input{
-    border: solid 1px black;
-    border-radius: 1px;
-    font-family: monospace;
-}
-.selecionar{
-    border: solid 1px black;
-    border-radius: 1px;
-    font-family: monospace;
-}
-.botao{
-    border: solid 1px black;
-    border-radius: 1px;
-    font-family: monospace;
-}
-.resultados{
-    align-self: self-start;
-    font-family: monospace;
-    border-style: solid;
-    width: 400px;
-    height: 20px;
-}
 body{
     background-image: url(./fundo.jpeg);
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-position: relative; 
+    background-position: relative;
 }
-.box{
-    width: 400px;
-    height: 300px;
-    top: 50%;
-    left: 50%;
-    transform: translate(0%, 40%);
-    margin: auto;
-    background-color: rgba(224, 168, 168, 0.664);
-    border: solid 2px black;
-    border-radius: 10px;
 
+#container{
+    border: solid 2px;
+    border-radius: 10px;
+    width: 40%;
+    background-color: rgba(255, 218, 218, 0.733);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: self-start;
     padding: 20px;
-    
+    margin: 50px auto;
+    text-align: center;
 }
 
 h1{
     font-family: monospace;
     align-self: center;
+}
+
+input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+select, button{
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button{
+    font-family: monospace;
+    background-color: #e46432;
+    color: #ffffff;
+    border-style: ridge;
+}
+
+button:hover {
+    background-color: #da8c78;
+}
+
+.result{
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    font-size: 16px;
+    margin: 3px;
+    border-radius: 6px;
+    font-family: monospace;
+    border-color: black;
+    border-style: ridge;
+    width: 98%
 }

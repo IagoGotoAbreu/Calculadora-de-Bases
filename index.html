@@ -9,24 +9,25 @@
 </head>
 
 <body>
-    <div id="div_pai" class="box">
+    <div id="container">
         <h1>Iago's Machine</h1>
-        <input type="text" placeholder="Digite o valor" class="input" id="input_valor">
-        <select id="selectBox" class="selecionar">
+        <input type="text" placeholder="Digite o valor" id="input_valor">
+        <select id="inputBase">
             <option value="Decimal">Decimal</option>
             <option value="Binario">Binario</option>
             <option value="Octal">Octal</option>
             <option value="Hexadecimal">Hexadecimal</option>
         </select>
-        <button id="converter" class="botao" onclick="converter()">Converter</button>
-        <div id="div_decimal" class="resultados">Decimal: </div>
-        <div id="binario" class="resultados">Binario: </div>
-        <div id="div_octal" class="resultados">Octal: </div>
-        <div id="hexa" class="resultados">Hexadecimal: </div>
+        <button id="converter" onclick="converter()">Converter</button>
+        <div id="div_decimal" class="result">Decimal: </div>
+        <div id="binario" class="result">Binario: </div>
+        <div id="div_octal" class="result">Octal: </div>
+        <div id="hexa" class="result">Hexadecimal: </div>
     </div>
 </body>
 
 </html>
+
 <script>
 
     function converter_dec() {
@@ -135,7 +136,7 @@
     }
 
     function converter() {
-        var opcao = selectBox.value
+        var opcao = inputBase.value
         if (opcao == "Decimal") {
             converter_dec()
         } else if (opcao == "Binario") {
